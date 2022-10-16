@@ -13,10 +13,45 @@ aside .menu{
     float: left;
 }
 
+.menu nav{
+    text-align: center;
+}
+
+.menu nav ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 20px;
+    color: #fff;
+    background: #343434;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.menu nav ul li a:hover{
+    background: #fff;
+    color: #343434;
+}
+
+/*-----------------CALCULADORA----------------*/
+
 .main{
     background: radial-gradient(circle, rgba(5,175,242,1) 0%, rgba(4,135,217,1) 30%, rgba(3,90,166,1) 100%);
     width: 75%;
     height: 100vh;
     float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.main .calculadora{
+    background: #343434;
+    width: 45%;
+    height: 70%;
+}
+
+
 
