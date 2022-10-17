@@ -1,6 +1,6 @@
 *{padding: 0; margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
-body{font-family: Roboto, sans-serif, Arial, Helvetica;}
+body{font-family: 'Roboto', sans-serif, Arial, Helvetica;}
 
 .container{
     width: 100%;
@@ -27,6 +27,7 @@ aside .menu{
     color: #fff;
     background: #343434;
     width: 80%;
+    height: 50%;
     border-radius: 5px;
 }
 
@@ -43,15 +44,43 @@ aside .menu{
     height: 100vh;
     float: left;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .main .calculadora{
     background: #343434;
-    width: 45%;
+    width: 450px;
     height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
+.main .calculadora input[type=textfield]{
+    height: 25%;
+    width: 100%;
+    cursor: default;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background-color: #343434;
+    color: #fff;
+    padding: 15px;
+    text-align: right;
+    font-size: 50px;
+    border: 0;
+    outline: none;
+}
 
-
+.main .calculadora input[type=button], input[type=reset]{
+    width: 22%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    color: #343434;
+    padding: 18px;
+    margin: 3px;
+    border: 0;
+    border-radius: 10px;
+}

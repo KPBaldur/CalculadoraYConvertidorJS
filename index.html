@@ -31,30 +31,30 @@
     <section class="main">
         <div class="calculadora">
             <form name="calculator">
-                <input type="number" name="respuesta" value="" autocomplete="off">
+                <input type="textfield" name="respuesta" value="" autocomplete="off">
                 <br>
-                <input type="button" value="C">
-                <input type="button" value="/">
-                <input type="button" value="X">
-                <input type="button" value="-">
+                <input type="reset" value="C" >
+                <input type="button" value="/" onclick="document.calculator.respuesta.value+='/'">
+                <input type="button" value="X" onclick="document.calculator.respuesta.value+='*'">
+                <input type="button" value="-" onclick="document.calculator.respuesta.value+='-'">
                 <br>
-                <input type="button" value="7">
-                <input type="button" value="8">
-                <input type="button" value="9">
-                <input type="button" value="+">
+                <input type="button" value="7" onclick="document.calculator.respuesta.value+='7'"> 
+                <input type="button" value="8" onclick="document.calculator.respuesta.value+='8'">
+                <input type="button" value="9" onclick="document.calculator.respuesta.value+='9'">
+                <input type="button" value="+" onclick="document.calculator.respuesta.value+='+'">
                 <br>
-                <input type="button" value="4">
-                <input type="button" value="5">
-                <input type="button" value="6">
-                <input type="button" value="%">
+                <input type="button" value="4" onclick="document.calculator.respuesta.value+='4'">
+                <input type="button" value="5" onclick="document.calculator.respuesta.value+='5'">
+                <input type="button" value="6" onclick="document.calculator.respuesta.value+='6'">
+                <input type="button" value="%" onclick="document.calculator.respuesta.value+='%'">
                 <br>
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
-                <input type="button" value="=">
+                <input type="button" value="1" onclick="document.calculator.respuesta.value+='1'">
+                <input type="button" value="2" onclick="document.calculator.respuesta.value+='2'">
+                <input type="button" value="3" onclick="document.calculator.respuesta.value+='3'">
+                <input type="button" value="=" onclick="document.calculator.respuesta.value=eval(document.calculator.respuesta.value)">
                 <br>
-                <input type="button" value=",">
-                <input type="button" value="0">
+                
+                <input type="button" value="0" onclick="document.calculator.respuesta.value+='0'">
             </form>
         </div>
     </section>
